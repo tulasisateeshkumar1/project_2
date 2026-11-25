@@ -1,0 +1,30 @@
+#iterator
+"""""
+class topten:
+    def __init__(self):
+        self.num=1
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.num<=10:
+            val=self.num
+            self.num+=1
+            return val
+        else:
+            raise StopIteration
+
+values=topten()
+#print(next(values))
+for i in values:
+    print(i)  """""
+
+#generator
+def topten():
+    n=1
+    while n<=10:
+        sqr=n*n
+        yield sqr
+        n+=1
+values=topten()
+for i in values:
+    print(i)

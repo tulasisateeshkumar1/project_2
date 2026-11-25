@@ -1,9 +1,9 @@
-import sys
+"""import sys
 
 x=int(input(sys.argv[1]))
 y=int(input(sys.argv[2]))
 z=x+y
-print(z)
+print(z)"""
 
 
 x=4
@@ -52,7 +52,7 @@ for i in range(2,num):
         print('Not a prime number')
         break
 else:
-    print('Prime number') """
+    print('Prime number') 
 
 
 
@@ -60,6 +60,6 @@ from array import *
 
 val=array('i',[1,2,3,4,5,-9])
 for i in range(0,len(val)):
-    print(val[i])
+    print(val[i]) """
 
 
